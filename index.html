@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -19,7 +20,7 @@
             <p class="selected-name">Санкт-Петербург</p>
           </div>
           <a class="header__phone" href="tel:+79999999999">
-            <img src="./images/phone-header.svg" alt="phone" />+7 999 999 99 99
+            <img src="./images/phone-header.svg" alt="phone" /><span>+7 999 999 99 99</span>
           </a>
         </div>
       </div>
@@ -106,8 +107,8 @@
         </div>
       </div>
       <div class="container">
-        <div class="main__info">
-          <h2 class="main__info-title">Времена года</h2>
+        <div class="main__info main__info--layerone">
+          <h2 class="main__info-title info-title--layerone">Времена года</h2>
           <p class="main__info-date">
             <img src="./images/calendar-main.svg" alt="calendar" /> 20 октября
           </p>
@@ -119,7 +120,14 @@
               <img src="./images/time-main.svg" alt="time" /> 1 час 40 минут
             </p>
             <p class="main__time-question">?</p>
+            <div class="time__question-hover">
+              <p>
+                Также закладываете <span>10 минут</span> перед началом мероприятия и
+                <span>10 минут</span> на гардероб
+              </p>
+            </div>
           </div>
+
           <p class="main__info-text">Комбо визуальных эффектов, светового шоу и мощного звука</p>
           <p class="main__info-age">16+</p>
           <div class="main__info-btn">
@@ -184,25 +192,25 @@
         <p class="about__slider-title">Другие видео концерта</p>
         <div class="about__slider">
           <div class="about__slider-item">
-            <div class="image-container">
+            <div class="about__image-container">
               <img class="play-btn about-concerts" src="./images/play-btn.png" alt="play" />
               <img class="image" src="./images/slider-about.png" alt="slider" />
             </div>
           </div>
           <div class="about__slider-item">
-            <div class="image-container">
+            <div class="about__image-container">
               <img class="play-btn about-concerts" src="./images/play-btn.png" alt="play" />
               <img class="image" src="./images/slider-about.png" alt="slider" />
             </div>
           </div>
           <div class="about__slider-item">
-            <div class="image-container">
+            <div class="about__image-container">
               <img class="play-btn about-concerts" src="./images/play-btn.png" alt="play" />
               <img class="image" src="./images/slider-about.png" alt="slider" />
             </div>
           </div>
           <div class="about__slider-item">
-            <div class="image-container">
+            <div class="about__image-container">
               <img class="play-btn about-concerts" src="./images/play-btn.png" alt="play" />
               <img class="image" src="./images/slider-about.png" alt="slider" />
             </div>
@@ -240,37 +248,37 @@
         <div class="music__slider">
           <div class="music__slider-item">
             <div class="music__image-container">
-              <img class="image" src="./images/music-img-1.png" alt="slider" />
+              <img src="./images/music-img-1.png" alt="slider" />
               <p class="music__slider-text">Inside Out</p>
             </div>
           </div>
           <div class="music__slider-item">
             <div class="music__image-container">
-              <img class="image" src="./images/music-img-2.png" alt="slider" />
+              <img src="./images/music-img-2.png" alt="slider" />
               <p class="music__slider-text">Young</p>
             </div>
           </div>
           <div class="music__slider-item">
             <div class="music__image-container">
-              <img class="image" src="./images/music-img-3.png" alt="slider" />
+              <img src="./images/music-img-3.png" alt="slider" />
               <p class="music__slider-text">Beach House</p>
             </div>
           </div>
           <div class="music__slider-item">
             <div class="music__image-container">
-              <img class="image" src="./images/music-img-4.png" alt="slider" />
+              <img src="./images/music-img-4.png" alt="slider" />
               <p class="music__slider-text">Kills You Slo...</p>
             </div>
           </div>
           <div class="music__slider-item">
             <div class="music__image-container">
-              <img class="image" src="./images/music-img-5.png" alt="slider" />
+              <img src="./images/music-img-5.png" alt="slider" />
               <p class="music__slider-text">Setting Fires</p>
             </div>
           </div>
           <div class="music__slider-item">
             <div class="music__image-container">
-              <img class="image" src="./images/music-img-6.png" alt="slider" />
+              <img src="./images/music-img-6.png" alt="slider" />
               <p class="music__slider-text">Somebody</p>
             </div>
           </div>
@@ -280,8 +288,34 @@
     <section class="see">
       <div class="container">
         <h2 class="title">Вы увидите</h2>
-        <div class="see__wrap">
-          <img src="./images/see-img-2.png" alt="see" />
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--1">
+            <img src="./images/see-img-1.png" alt="see" />
+          </div>
+          <div class="swiper-slide swiper-slide--2">
+            <img src="./images/see-img-2.png" alt="see" />
+          </div>
+          <div class="swiper-slide swiper-slide--3">
+            <img src="./images/see-img-3.png" alt="see" />
+          </div>
+          <div class="swiper-slide swiper-slide--4">
+            <img src="./images/see-img-1.png" alt="see" />
+          </div>
+          <div class="swiper-slide swiper-slide--5">
+            <img src="./images/see-img-2.png" alt="see" />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="tranding-slider-control">
+          <div class="see-button-prev slider-arrow">
+            <img src="./images/arrow-slider-left.svg" alt="arrow" />
+          </div>
+          <div class="see-button-next slider-arrow">
+            <img src="./images/arrow-slider-right.svg" alt="arrow" />
+          </div>
         </div>
       </div>
     </section>
@@ -301,8 +335,6 @@
             <h2 class="advantage__item-number">/ 03 /</h2>
             <h3 class="advantage__item-title">Проработка каждого номера</h3>
           </div>
-        </div>
-        <div class="advantage__wrap-bottom">
           <div class="advantage__item item-four">
             <h2 class="advantage__item-number">/ 04 /</h2>
             <h3 class="advantage__item-title">
@@ -316,6 +348,7 @@
             </h3>
           </div>
         </div>
+        <div class="advantage__wrap-bottom"></div>
         <div class="advantage__text-bottom">
           <div class="text__wrap">
             <p class="advantage__text-item">
@@ -333,6 +366,10 @@
       <div class="container">
         <h2 class="title">Сеансы</h2>
       </div>
+      <h2 class="session__info-title session__info--mobile">
+        Название Шоу и мероприятия
+        <p class="title__age">16+</p>
+      </h2>
       <div class="session__wrap">
         <div class="container">
           <div class="session__wrap-item">
@@ -358,31 +395,73 @@
           </div>
         </div>
       </div>
+      <div class="session__info-btn--mobile">
+        <button class="session__info-btn">КУПИТЬ БИЛЕТ</button>
+      </div>
     </section>
     <section class="other__session">
       <div class="container">
         <h2 class="title">Другие сеансы</h2>
         <div class="other__session-wrap">
           <div class="other__session-item session__item-header">
+            <div class="other__session-info--mobile">
+              <div class="session__item-data--mobile">
+                <p class="session__item-data">21</p>
+                <p class="session__item-month">окт / 2024</p>
+                <p class="session__item-time">19:00</p>
+              </div>
+              <div class="session__item-info--mobile">
+                <p class="session__item-location">Барвиха Luxury Village</p>
+                <p class="session__item-price">от 5000 руб.</p>
+              </div>
+            </div>
+
             <p class="session__item-data">21 октября</p>
             <p class="session__item-time">19:00</p>
+
             <p class="session__item-location">Барвиха Luxury Village</p>
             <p class="session__item-price">от 5000 руб.</p>
             <button class="session__item-btn">Купить билеты</button>
           </div>
           <div class="other__session-item">
+            <div class="other__session-info--mobile">
+              <div class="session__item-data--mobile">
+                <p class="session__item-data">21</p>
+                <p class="session__item-month">окт / 2024</p>
+                <p class="session__item-time">19:00</p>
+              </div>
+              <div class="session__item-info--mobile">
+                <p class="session__item-location">Барвиха Luxury Village</p>
+                <p class="session__item-price">от 5000 руб.</p>
+              </div>
+            </div>
+
             <p class="session__item-data">21 октября</p>
             <p class="session__item-time">19:00</p>
+
             <p class="session__item-location">Барвиха Luxury Village</p>
             <p class="session__item-price">от 5000 руб.</p>
             <button class="session__item-btn">Купить билеты</button>
           </div>
           <div class="other__session-item">
+            <div class="other__session-info--mobile">
+              <div class="session__item-data--mobile">
+                <p class="session__item-data">21</p>
+                <p class="session__item-month">окт / 2024</p>
+                <p class="session__item-time">19:00</p>
+              </div>
+              <div class="session__item-info--mobile">
+                <p class="session__item-location">Барвиха Luxury Village</p>
+                <p class="session__item-price">от 5000 руб.</p>
+              </div>
+            </div>
+
             <p class="session__item-data">21 октября</p>
             <p class="session__item-time">19:00</p>
+
             <p class="session__item-location">Барвиха Luxury Village</p>
             <p class="session__item-price">от 5000 руб.</p>
-            <button class="session__item-btn sold-btn">Sold out</button>
+            <button class="session__item-btn sold-btn">SOLD OUT</button>
           </div>
         </div>
       </div>
@@ -423,9 +502,9 @@
           </div>
           <div class="reviews__item">
             <div class="reviews__item-user">
-              <img src="./images/review-user-2.svg" alt="review" />
+              <img src="./images/review-user-3.svg" alt="review" />
               <div class="item__user-info">
-                <p class="item__user-name">Kellie</p>
+                <p class="item__user-name">Laura</p>
                 <p class="item__user-social">Vkontakte</p>
               </div>
             </div>
@@ -433,6 +512,27 @@
               Музыка звучала просто потрясающе, каждая нота пронзала мое сердце.
             </p>
             <p class="review__item-more">Читать полностью</p>
+          </div>
+          <div class="reviews__item">
+            <div class="reviews__item-user">
+              <img src="./images/review-user-3.svg" alt="review" />
+              <div class="item__user-info">
+                <p class="item__user-name">Laura</p>
+                <p class="item__user-social">Vkontakte</p>
+              </div>
+            </div>
+            <p class="review__item-text">
+              Музыка звучала просто потрясающе, каждая нота пронзала мое сердце.
+            </p>
+            <p class="review__item-more">Читать полностью</p>
+          </div>
+        </div>
+        <div class="tranding-slider-control">
+          <div class="reviews-button-prev slider-arrow">
+            <img src="./images/arrow-slider-left.svg" alt="arrow" />
+          </div>
+          <div class="reviews-button-next slider-arrow">
+            <img src="./images/arrow-slider-right.svg" alt="arrow" />
           </div>
         </div>
       </div>
@@ -443,6 +543,7 @@
           Как <br />
           добраться
         </h2>
+        <div class="map-adress" id="map-adress"></div>
         <div class="map__btn">
           <button>КУПИТЬ БИЛЕТ</button>
         </div>
@@ -450,7 +551,7 @@
     </section>
     <section class="premiers">
       <div class="container">
-        <h2 class="title">Вы <br />смотрели</h2>
+        <h2 class="title">Премьеры</h2>
         <div class="premiers__slider-wrapper">
           <div class="premiers__slider">
             <div class="premiers__slider-item">
@@ -546,13 +647,20 @@
             </div>
           </div>
           <div class="slider__btns">
-            <img class="slider-button prev" src="./images/arrow-slider-left.svg" alt="" />
-            <img class="slider-button next" src="./images/arrow-slider-right.svg" alt="" />
+            <img
+              class="slider-button slider-button-prev"
+              src="./images/arrow-slider-left.svg"
+              alt=""
+            />
+            <img
+              class="slider-button slider-button-next"
+              src="./images/arrow-slider-right.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </section>
-
     <blockquote class="feedback">
       <div class="container">
         <div class="feedback__wrap">
@@ -606,6 +714,7 @@
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer__wrap">
@@ -637,10 +746,23 @@
               <p class="footer__inn-text">ООО “Артфоникс”</p>
             </div>
           </div>
-          <p class="footer__rights">© ООО «Правообладатель контента», 2024</p>
+          <div class="footer__rights-wrap">
+            <div class="footer__inn">
+              <p class="footer__inn-text">ИНН 999 999 999 999</p>
+              <p class="footer__inn-text">ОГРН 999 999 999 999</p>
+              <p class="footer__inn-text">КПП 999 9999 9999 999</p>
+              <p class="footer__inn-text">ООО “Артфоникс”</p>
+            </div>
+            <p class="footer__rights">
+              © ООО «Правообладатель контента», 2024
+              <img src="./images/footer-logo.svg" alt="footer-logo" />
+            </p>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=6044cce0-b70a-46ac-9f29-62d4c1be6e26&lang=ru_RU"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
